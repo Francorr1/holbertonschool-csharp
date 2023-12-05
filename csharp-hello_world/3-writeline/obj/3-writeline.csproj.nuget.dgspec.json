@@ -17,14 +17,14 @@
           "/home/franco/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net2.1.401"
+          "net4.5"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net2.1.401": {
-            "targetAlias": "net2.1.401",
+          "net45": {
+            "targetAlias": "net4.5",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net2.1.401": {
-          "targetAlias": "net2.1.401",
+        "net45": {
+          "targetAlias": "net4.5",
           "dependencies": {
             "Microsoft.NETFramework.ReferenceAssemblies": {
               "suppressParent": "All",
