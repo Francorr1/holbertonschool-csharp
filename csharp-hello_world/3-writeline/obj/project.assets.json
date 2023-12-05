@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v2.1": {
+    ".NETFramework,Version=v2.1.401": {
       "Microsoft.NETFramework.ReferenceAssemblies/1.0.3": {
         "type": "package",
         "dependencies": {
@@ -95,7 +95,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v2.1": [
+    ".NETFramework,Version=v2.1.401": [
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3"
     ]
   },
@@ -115,14 +115,14 @@
         "/home/franco/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net2.1"
+        "net2.1.401"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net21": {
-          "targetAlias": "net2.1",
+        "net2.1.401": {
+          "targetAlias": "net2.1.401",
           "projectReferences": {}
         }
       },
@@ -133,8 +133,8 @@
       }
     },
     "frameworks": {
-      "net21": {
-        "targetAlias": "net2.1",
+      "net2.1.401": {
+        "targetAlias": "net2.1.401",
         "dependencies": {
           "Microsoft.NETFramework.ReferenceAssemblies": {
             "suppressParent": "All",
