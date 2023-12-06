@@ -7,10 +7,11 @@ class Program
         Random rndm = new Random();
         int number = rndm.Next(-10000, 10000);
         Console.Write("The last digit of {0} is ", number);
+        bool neg = false;
 	    if (number < 0)
         {
             number *= -1;
-            bool neg = true;
+            neg = true;
         }
         int lastNumber = number % (10);
         if (neg == true)
