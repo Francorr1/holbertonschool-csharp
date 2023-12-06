@@ -10,15 +10,20 @@ class Program
 	    if (number < 0)
         {
             number *= -1;
+            bool neg = true;
         }
         int lastNumber = number % (10);
+        if (neg == true)
+        {
+            lastNumber *= -1;
+        }
         if (lastNumber > 5)
         {
             Console.WriteLine("{0} and is greater than 5", lastNumber);
         }
         else if (lastNumber == 0)
         {
-            Console.WriteLine("{0} and is zero", lastNumber);
+            Console.WriteLine("{0} and is 0", lastNumber);
         }
         else if (lastNumber < 6 && lastNumber != 0)
         {
