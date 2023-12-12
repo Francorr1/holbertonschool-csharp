@@ -21,12 +21,12 @@ class Array
             for (int i = 0; i < size; i++)
             {
                 newArray[i] = i;
-                Console.Write("{0} ", i);
                 if (i == size - 1)
                 {
                     Console.WriteLine("{0}", i);
                     continue;
                 }
+                Console.Write("{0} ", i);
             }
             return newArray;
         }
