@@ -12,7 +12,7 @@ class List
         }
         else
         {
-            int max = 0;
+            int max = myList[0];
             for (int i = 0; i < myList.Count; i++)
             {
                 if (myList[i] > max)
