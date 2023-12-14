@@ -17,7 +17,7 @@ class List
             {
                 newList.Add(i);
                 Console.Write("{0}", i);
-                if (i != size)
+                if (i != size - 1)
                 {
                     Console.Write(" ");
                 }
