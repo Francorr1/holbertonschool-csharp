@@ -13,7 +13,7 @@ class Matrix
             {
                 myMatrix[i, j] = (int)Math.Pow(myMatrix[i, j], 2);
             }
-            return myMatrix;
         }
+        return myMatrix;
     }
 }
