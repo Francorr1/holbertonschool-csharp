@@ -20,7 +20,7 @@ class List
             catch (System.Exception)
             {
                 Console.WriteLine("Out of range");
-                break;
+                return newList;
             }
             try
             {
