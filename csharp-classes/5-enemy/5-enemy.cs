@@ -62,7 +62,7 @@ namespace Enemies
         /// <returns></returns>
         public override string ToString()
         {
-            return "Zombie name: " + name + " / Total Health: " + health;
+            return "Zombie Name: " + name + " / Total Health: " + health;
         }
     }
 }
