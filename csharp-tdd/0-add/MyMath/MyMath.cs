@@ -1,13 +1,15 @@
 ﻿using System;
 
-namespace MyMath;
-
-/// <summary>Class Operations</summary>
-public class Operations
+namespace MyMath
 {
-    /// <summary>Adds two numbers</summary>
-    public static int Add(int a, int b)
+
+    /// <summary>Class Operations</summary>
+    public class Operations
     {
-        return a + b;
+        /// <summary>Adds two numbers</summary>
+        public static int Add(int a, int b)
+        {
+            return a + b;
+        }
     }
-}
+{
