@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 
-class Vectormath
+class VectorMath
 {
     public static double Magnitude(double[] vector)
     {
-        int res = 0;
+        double res = 0;
         int VectorType = vector.Count();
         if (VectorType == 2)
         {
             res += Math.Pow(vector[0], 2);
             res += Math.Pow(vector[1], 2);
             res = Math.Sqrt(res);
-            return res;
+            return Math.Round(res, 2, MidpointRounding.ToEven);
         }
         if (VectorType == 3)
         {
@@ -21,7 +21,7 @@ class Vectormath
             res += Math.Pow(vector[1], 2);
             res += Math.Pow(vector[2], 2);
             res = Math.Sqrt(res);
-            return res;
+            return Math.Round(res, 2, MidpointRounding.ToEven);
         }
         else
         {
