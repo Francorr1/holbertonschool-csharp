@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 class Vectormath
 {
     public static double Magnitude(double[] vector)
     {
         int res = 0;
-        int VectorType = vector.count();
+        int VectorType = vector.Count();
         if (VectorType == 2)
         {
             res += Math.Pow(vector[0], 2);
