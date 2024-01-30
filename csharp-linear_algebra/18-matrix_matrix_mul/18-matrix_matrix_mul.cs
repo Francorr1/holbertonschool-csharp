@@ -14,8 +14,8 @@ class MatrixMath
     {
         if (matrix1.GetLength(1) != matrix2.GetLength(0))
         {
-            double[,] res = { { -1 } };
-            return res;
+            double[,] err = { { -1 } };
+            return err;
         }
         int Mat1Col = matrix1.GetLength(0);
         int Mat1Row = matrix1.GetLength(1);
