@@ -10,7 +10,7 @@ class MatrixMath
         int Mat2Type = matrix2.GetLength(0);
         if (Mat1Type != Mat2Type)
         {
-            double[,] res = {-1};
+            double[,] res = { { -1 } };
             return res;
         }
         if (Mat1Type == 2)
@@ -41,7 +41,7 @@ class MatrixMath
         }
         else
         {
-            double[,] res = { { -1 }, { -1 } };
+            double[,] res = { { -1 } };
             return res;
         }
     }
