@@ -12,24 +12,16 @@ class MatrixMath
     /// </summary>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
-        int Mat1Type = matrix1.GetLength(0) + matrix1.GetLength(1);
-        int Mat2Type = matrix2.GetLength(0) + matrix2.GetLength(1);
-        if (matrix1.GetLength(0) != 2 || matrix2.GetLength(0) != 2)
+        int Mat1Type = matrix1.GetLength(0);
+        int Mat2Type = matrix2.GetLength(0);
+        int Mat1Type1 = matrix1.GetLength(1);
+        int Mat2Type1 = matrix2.GetLength(1);
+        if (Mat1Type != Mat2Type || Mat1Type != Mat1Type1 || Mat2Type != Mat2Type1 || Mat1Type1 != Mat2Type1)
         {
             double[,] res = { { -1 } };
             return res;
         }
-        if (matrix1.GetLength(0) != 3 || matrix2.GetLength(0) != 3)
-        {
-            double[,] res = { { -1 } };
-            return res;
-        }
-        if (Mat1Type != Mat2Type)
-        {
-            double[,] res = { { -1 } };
-            return res;
-        }
-        if (Mat1Type == 4)
+        if (Mat1Type == 2)
         {
             double[,] res = { { 0, 0 }, { 0, 0 } };
             for (int i = 0; i < 2; i++)
@@ -42,7 +34,7 @@ class MatrixMath
             }
             return res;
         }
-        if (Mat1Type == 6)
+        if (Mat1Type == 3)
         {
             double[,] res = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
             for (int i = 0; i < 3; i++)
