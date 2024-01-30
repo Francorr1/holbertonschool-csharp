@@ -12,8 +12,8 @@ class VectorMath
     /// </summary>
     public static double DotProduct(double[] vector1, double[] vector2)
     {
-        int Vec1Type = vector1.Count;
-        int Vec2Type = vector2.Count;
+        int Vec1Type = vector1.Count();
+        int Vec2Type = vector2.Count();
         double res = 0;
         if (Vec1Type != Vec2Type)
         {
