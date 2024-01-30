@@ -14,6 +14,16 @@ class MatrixMath
     {
         int Mat1Type = matrix1.GetLength(0) + matrix1.GetLength(1);
         int Mat2Type = matrix2.GetLength(0) + matrix2.GetLength(1);
+        if (matrix1.GetLength(0) != 2 || matrix2.GetLength(0) != 2)
+        {
+            double[,] res = { { -1 } };
+            return res;
+        }
+        if (matrix1.GetLength(0) != 3 || matrix2.GetLength(0) != 3)
+        {
+            double[,] res = { { -1 } };
+            return res;
+        }
         if (Mat1Type != Mat2Type)
         {
             double[,] res = { { -1 } };
