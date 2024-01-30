@@ -43,5 +43,10 @@ class MatrixMath
             }
             return res;
         }
+        else
+        {
+            double[,] res = { { -1} };
+            return res;
+        }
     }
 }
