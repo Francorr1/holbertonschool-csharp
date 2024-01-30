@@ -21,7 +21,7 @@ class MatrixMath
         }
         if (MatType == 2)
         {
-            double[,] res = { { 0, 0 }, { 0, 0 } }
+            double[,] res = { { 0, 0 }, { 0, 0 } };
             for (int i = 0; i < 2; i++)
             {
                 for (int j = 0; j < 2; j++)
@@ -33,7 +33,7 @@ class MatrixMath
         }
         if (MatType == 3)
         {
-            double[,] res = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } }
+            double[,] res = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
