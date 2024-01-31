@@ -13,6 +13,13 @@ class MatrixMath
         }
         double[,] rot = { { Math.Cos(angle), Math.Sin(angle) }, { -1 * Math.Sin(angle), Math.Cos(angle) } };
         double[,] res = Multiply(matrix, rot);
+        for (int i = 0; i < 2; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                res[i, j] = Math.Round(res[i, j], 2);
+            }
+        }
         return res;
     }
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
