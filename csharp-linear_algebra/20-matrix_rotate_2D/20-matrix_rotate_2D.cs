@@ -11,7 +11,7 @@ class MatrixMath
             double [,] err = { { -1 } };
             return err;
         }
-        double[,] rot = { { Math.Round(Math.Cos(angle)), Math.Round(Math.Sin(angle)) }, { Math.Round(-1 * Math.Sin(angle)), Math.Round(Math.Cos(angle)) } };
+        double[,] rot = { { Math.Cos(angle), Math.Sin(angle) }, { -1 * Math.Sin(angle), Math.Cos(angle) } };
         double[,] res = Multiply(matrix, rot);
         return res;
     }
