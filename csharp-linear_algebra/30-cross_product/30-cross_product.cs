@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// class VectorMath
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// Method that fids the cross product of 2 3D vectors
+    /// </summary>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
     {
         if (vector1.Count() != 3 || vector2.Count() != 3)
