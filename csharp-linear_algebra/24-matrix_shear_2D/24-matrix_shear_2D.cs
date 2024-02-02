@@ -28,6 +28,6 @@ class MatrixMath
             res[1, 2] += factor * res[1, 1];
             res[2, 2] += factor * res[2, 1];
         }
-        return res
+        return res;
     }
 }
