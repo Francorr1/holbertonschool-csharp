@@ -13,7 +13,7 @@ class MatrixMath
     public static double Determinant(double[,] matrix)
     {
         int MatType1 = (matrix.GetLength(0) + matrix.GetLength(1)) / 2;
-        if (MatType1 != 2 || MatType1 != 3)
+        if (MatType1 != 2 && MatType1 != 3)
         {
             return -1;
         }
