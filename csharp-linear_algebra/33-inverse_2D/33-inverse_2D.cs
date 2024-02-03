@@ -23,6 +23,7 @@ class MatrixMath
             for (int j = 0; j < 2; j++)
             {
                 res[i, j] = res[i, j] / det;
+                res[i, j] = Math.Round(res[i, j], 2);
             }
         }
         return res;
