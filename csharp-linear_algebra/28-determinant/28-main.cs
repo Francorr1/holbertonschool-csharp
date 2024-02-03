@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[,] matrix = { { 3, -2 }, { 7, 4 } };
+        double[,] matrix = { { 2, 5, 0 }, { 0, 4, -1 } };
 
         Console.WriteLine(MatrixMath.Determinant(matrix));
     }
