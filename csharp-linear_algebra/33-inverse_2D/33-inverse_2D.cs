@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// class MatrixMath
+/// </summary>
 class MatrixMath
 {
+    /// <summary>
+    /// Method that calculates the inverse of a 2D matrix
+    /// </summary>
     public static double[,] Inverse2D(double[,] matrix)
     {
         if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
