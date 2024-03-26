@@ -148,7 +148,7 @@ class Queue<T>
             Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
             return null;
         }
-        else
+        if (queueType == typeof(char))
         {
             StringBuilder sb = new StringBuilder();
             Node node = head;
@@ -159,5 +159,21 @@ class Queue<T>
             }
             return sb.ToString();
         }
+        if (queueType == typeof(string))
+        {
+            StringBuilder sb = new StringBuilder();
+            Node node = head;
+            while (node != null)
+            {
+                sb.Append(node.value);
+                if (node.next != null)
+                {
+                    sb.Append(" ");
+                }
+                node = node.next;
+            }
+            return sb.ToString();
+        }
+        return null;
     }
 }
