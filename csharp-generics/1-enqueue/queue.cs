@@ -49,8 +49,8 @@ class Queue<T>
         }
         else
         {
-            node.next = head;
-            head = node;
+            tail.next = node;
+            tail = node;
         }
         count += 1;
     }
