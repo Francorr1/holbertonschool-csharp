@@ -5,7 +5,7 @@
 /// </summary>
 public abstract class Base
 {
-    public string name { get; set; }
+    string name { get; set; }
 
     /// <summary>
     /// ToString() override
@@ -59,23 +59,23 @@ public interface ICollectable
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
-    public string name { get; set; }
-    
     public int durability { get; set; }
 
     public bool isCollected { get; set; }
+
+    public string name { get; set; }
 
     public void Interact()
     {
 
     }
 
-    public void Collect()
+    public void Break()
     {
 
     }
 
-    public void Break()
+    public void Collect()
     {
 
     }
