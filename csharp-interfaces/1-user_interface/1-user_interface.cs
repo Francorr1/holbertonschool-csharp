@@ -5,6 +5,9 @@
 /// </summary>
 public abstract class Base
 {
+    /// <summary>
+    /// name property
+    /// </summary>
     string name { get; set; }
 
     /// <summary>
@@ -33,6 +36,9 @@ public interface IInteractive
 /// </summary>
 public interface IBreakable
 {
+    /// <summary>
+    /// durability property
+    /// </summary>
     int durability { get; set; }
 
     /// <summary>
@@ -46,6 +52,9 @@ public interface IBreakable
 /// </summary>
 public interface ICollectable
 {
+    /// <summary>
+    /// iscollected property
+    /// </summary>
     bool isCollected { get; set; }
 
     /// <summary>
@@ -59,22 +68,40 @@ public interface ICollectable
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
+    /// <summary>
+    /// durability property
+    /// </summary>
     public int durability { get; set; }
 
+    /// <summary>
+    /// isCollected property
+    /// </summary>
     public bool isCollected { get; set; }
 
+    /// <summary>
+    /// name property
+    /// </summary>
     public string name { get; set; }
 
+    /// <summary>
+    /// interact method
+    /// </summary>
     public void Interact()
     {
 
     }
 
+    /// <summary>
+    /// break method
+    /// </summary>
     public void Break()
     {
 
     }
 
+    /// <summary>
+    /// collect method
+    /// </summary>
     public void Collect()
     {
 
