@@ -59,6 +59,8 @@ public interface ICollectable
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
+    public string name { get; set; }
+    
     public int durability { get; set; }
 
     public bool isCollected { get; set; }
